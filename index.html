@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Che Guevara - Accueil</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #f5f5f5;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #111111;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 2px solid #b22222;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 0.2em;
+      color: #b22222;
+    }
+
+    header p {
+      font-size: 1.4em;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.5;
+      color: #f5f5f5;
+    }
+
+    .flag-cuba {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+      height: 40px;
+      border: 2px solid #b22222;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/320px-Flag_of_Cuba.svg.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    nav {
+      background-color: #b22222;
+      padding: 12px 0;
+      text-align: center;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      margin: 0 15px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.15em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #000000;
+      background-color: #f5f5f5;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .che-image {
+      text-align: center;
+      margin: 30px auto 0;
+    }
+
+    .che-image img {
+      width: 300px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(178, 34, 34, 0.6);
+    }
+
+    section#welcome {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 40px auto 60px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.04);
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(178, 34, 34, 0.3);
+      font-size: 1.15em;
+      line-height: 1.7;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #b22222;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background-color: #111111;
+      color: #f5f5f5;
+      font-weight: bold;
+      border-top: 2px solid #b22222;
+      margin-top: auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .flag-cuba {
+        width: 50px;
+        height: 33px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 10px;
+        font-size: 1em;
+      }
+
+      section#welcome {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Che Guevara</h1>
+  <p>Découvrir l'homme derrière la légende, ses voyages et son parcours unique.</p>
+  <div class="flag-cuba" title="Drapeau de Cuba"></div>
+</header>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="biographie.html">Biographie</a>
+  <a href="voyages.html">Voyages</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="che-image">
+  <img src="Images/Portrait_El_Che.jpg" alt="Che Guevara" />
+</div>
+
+<section id="welcome">
+  <h2>Bienvenue sur ce site dédié à Che Guevara</h2>
+  <p>
+    Ernesto "Che" Guevara est une figure historique fascinante dont la vie a marqué le XXe siècle. Ce site vous propose un regard apolitique sur son parcours : de sa jeunesse en Argentine à ses célèbres voyages à travers l'Amérique latine, en passant par sa formation et ses passions.
+  </p>
+  <p>
+    À travers des récits, des images et des témoignages, vous pourrez explorer les étapes importantes de sa vie et comprendre les influences qui ont façonné l’homme derrière le mythe.
+  </p>
+  <p>
+    Que vous soyez curieux d’histoire ou simplement désireux de découvrir une personnalité hors du commun, ce site vous accueille pour un voyage dans le temps et l’espace, riche en découvertes humaines.
+  </p>
+</section>
+
+<div class="audio-section">
+  <h2>🎵 Hommage musical : "Hasta Siempre"</h2>
+  <p>
+    Cette chanson interprétée par Nathalie Cardone rend hommage à Che Guevara après sa mort. Son refrain évoque la mémoire d’un homme qui a profondément marqué les esprits par son engagement et ses idéaux humanistes.
+  </p>
+  <audio controls>
+    <source src="Audio/Hasta_Siempre.mp3" type="audio/mp3">
+  </audio>
+</div>
+
+<footer>
+  <p>&copy; 2025 - Site éducatif sur Che Guevara</p>
+</footer>
+
+
+</body>
+</html>
